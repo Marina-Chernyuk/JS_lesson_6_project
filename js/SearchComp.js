@@ -13,6 +13,4 @@ Vue.component('search-form', {
                 </div>
             </form>
     `
-
-
 });
