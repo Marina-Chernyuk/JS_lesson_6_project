@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="virwport" content="width=device-width,initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/ee2ef8f203.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app">
+        <header class="header container">
+            <a href="index.html" class="header__logo logo_site"><img class="logo_img" src="img/logo.png" alt="logo">
+                <span class="logo_site_text">techn</span><span class="oo">o</span></a>
+            <search-form></search-form>
+            <!--<form class="header__form" action="#" @submit.prevent="filter">
+                <div class="header__block">
+                    <button class="header__browse">Browse</button>
+                </div>
+                <div class="header__block_cearch">
+                    <input class="header__input" type="text" placeholder="Search for Item..." v-model="userSearch">
+                    <button type="submit" class="header__cearch"><span class="loupe"></span></button>
+                </div>
+            </form>-->
+            <div class="header__control">
+                <div class="header__control_cart">
+                    <cart ref="cart"></cart>
+                    <!--<button class="btn-cart" type="button" @click="showCart = !showCart">
+                        <svg width="32px" height="29px" fill="#000000" viewBox="0 0 32.000000 29.000000">
+                            <g transform="translate(0,29) scale(0.1,-0.1)">
+                                <path d="M0 281 c0 -6 11 -11 23 -11 22 0 26 -9 48 -92 l25 -93 81 -3 81 -3
+                        25 55 c47 103 51 96 -52 96 -49 0 -93 -4 -96 -10 -4 -6 23 -10 74 -10 45 0 81
+                        -2 81 -5 0 -2 -10 -25 -22 -50 l-22 -45 -67 0 -67 0 -23 88 c-24 85 -25 87
+                        -57 90 -18 2 -32 -1 -32 -7z" />
+                                <path d="M74 35 c-4 -9 -2 -21 4 -27 15 -15 44 -1 40 19 -4 23 -36 29 -44 8z" />
+                                <path d="M242 28 c4 -30 43 -33 43 -3 0 13 -8 21 -23 23 -20 3 -23 0 -20 -20z" />
+                            </g>
+                        </svg></button>-->
+                    <!--<div class="cart-block" v-show="showCart">
+                        <p v-if="!cartItems.length">Cart is empty</p>-->
+                        <!--<div class="cart-item" v-for="item of cartItems" :key="item.id_product">
+                            <div class="product-bio">
+                                <img :src="imgCart" alt="Some img">
+                                <div class="product-desc">
+                                    <div class="product-title">{{ item.product_name }}</div>
+                            <div class="product-quantity">Quantity: {{ item.quantity }}</div>
+                            <div class="product-single-price">$ {{ item.price }} each</div>
+                                </div>
+                            </div>
+                            <div class="right-block">
+                                <div class="product-price">{{item.quantity*item.price}}</div>
+                                <button class="del-btn" @click="remove(item)">&times;</button>
+                            </div>
+                        </div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="header__control_button">
+                <button class="header__control_button_office">My Account</button>
+            </div>
+
+        </header>
+        <nav class="container nav__menu">        
+            <a href="index.html" class="nav__menu_a">home </a>
+            <a href="#" class="nav__menu_a">notebook</a>
+            <a href="#" class="nav__menu_a">mouse</a>
+            <a href="#" class="nav__menu_a">keyboard</a>
+            <a href="#" class="nav__menu_a">gamepad</a>
+            <a href="#" class="nav__menu_a">accoseriese</a>
+            <a href="#" class="nav__menu_a">hot deals</a>       
+        </nav>
+        <main class="content_box">
+            <div class="product container">
+                <products ref="products"></products>
+                <!--<div class="products">
+                    <div class="product-item" v-for="product of filtered" :key="product.id_product">
+                        <img :src="imgProduct" alt="Some img" class="product-img">
+                        <div class="desc">
+                            <h3 class="title">{{product.product_name}}</h3>
+                            <p class="price">{{product.price}}</p>
+                            <button class="buy-btn" @click="addProduct(product)">Купить</button>
+                        </div>
+                    </div>
+                </div>-->
+            
+            </div>    
+        </main>    
+        <footer class="footer">
+            <p class="footer__text">&#169; 2021 Techno All Rights Reserved</p>
+        </footer> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/CartComp.js"></script>
+    <script src="js/ProducComp.js"></script>
+    <script src="js/SearchComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
