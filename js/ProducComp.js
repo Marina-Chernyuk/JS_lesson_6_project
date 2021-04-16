@@ -34,7 +34,7 @@
             <product v-for="item of filtered" :key="item.id_product" :img="imgCatalog" :product="item"></product>
         </div>
     `
-});
+};
 Vue.component('product', {
     props: ['product', 'img'],
     template: `
