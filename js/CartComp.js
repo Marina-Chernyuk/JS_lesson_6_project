@@ -1,4 +1,4 @@
-Vue.component('cart', {
+/*export*/ const cart = {
     data(){
       return {
           imgCart: 'img/products.jpg',
