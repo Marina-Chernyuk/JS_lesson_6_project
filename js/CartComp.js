@@ -71,7 +71,7 @@
                 </cart-item>
             </div>
 </div>`
-});
+};
 Vue.component('cart-item', {
     props: ['cartItem', 'img'],
     template: `
