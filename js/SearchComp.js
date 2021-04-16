@@ -1,4 +1,4 @@
-Vue.component('search-form', {
+/*export*/ const search_form = {
     data: {
         userSearch: '',
     },
