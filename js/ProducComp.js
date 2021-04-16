@@ -1,4 +1,4 @@
-Vue.component('products', {
+/*export*/ const products = {
     data(){
         return {
             catalogUrl: '/catalogData.json',
